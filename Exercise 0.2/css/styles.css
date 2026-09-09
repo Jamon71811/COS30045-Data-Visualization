@@ -1,0 +1,87 @@
+/* Basic reset to remove default margins and padding */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Navigation Bar Styling */
+nav { 
+    display: flex; 
+    align-items: center; 
+    background-color: #333; 
+    padding: 10px 20px; 
+}
+
+#logo { 
+    height: 50px; 
+    margin-right: 20px; 
+}
+
+.nav-links { 
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+}
+
+/* Navigation Links */
+.nav-links a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+    transition: 0.3s; 
+}
+
+/* Hover effect for links */
+.nav-links a:hover { 
+    background-color: #555; 
+    border-radius: 5px; 
+}
+
+/* Indicates the current page the user is on */
+.nav-links a.active { 
+    color: #4CAF50; 
+    border-bottom: 2px solid #4CAF50; 
+}
+
+/* FAQ Accordion Button Styling */
+.accordion { 
+    background-color: #eee; 
+    color: #444; 
+    cursor: pointer; 
+    padding: 15px; 
+    width: 100%; 
+    text-align: left; 
+    border: none; 
+    outline: none; 
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+.accordion:hover { 
+    background-color: #ccc; 
+}
+
+/* FAQ Panel Styling (Hidden by default) */
+.panel { 
+    padding: 0 15px; 
+    background-color: white; 
+    display: none; 
+    overflow: hidden; 
+}
+
+/* Main Content and Footer Spacing */
+main { 
+    padding: 20px; 
+    min-height: 70vh; 
+}
+
+footer { 
+    background-color: #222; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 20px; 
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character encoding and ensures the website is responsive on mobile devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Story - TV Energy Analysis</title>
+    <!-- Links this HTML page to your external CSS file for styling -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav>
+        <!-- Wrapping the logo in an anchor tag so clicking it returns home -->
+        <a href="index.html">
+            <img src="assets/images/PowerIcon.png" alt="Power Logo" id="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <!-- The 'active' class highlights the current page the user is on -->
+            <li><a href="data-story.html" class="active">Data Story</a></li>
+            <li><a href="televisions.html">Televisions</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Page Title and Subtitle -->
+        <div class="header-section">
+            <h1>Bigger Screen, Heavier Bill</h1>
+            <p>A data-driven storyboard exploring the hidden energy costs of modern televisions.</p>
+        </div>
+
+        <!-- Storyboard Grid Container: Uses CSS Grid to align cards perfectly -->
+        <div class="storyboard-grid">
+            
+            <!-- Card 1: The Hook -->
+            <div class="story-card">
+                <div class="card-tag">Phase 1: The Hook</div>
+                <h3>The Hidden Cost</h3>
+                <p>Consumers frequently upgrade to large living room TVs, focusing on 4K resolution while overlooking the steep increase in annual electricity usage and hidden operational costs.</p>
+            </div>
+
+            <!-- Card 2: Establishing Baseline -->
+            <div class="story-card">
+                <div class="card-tag">Phase 2: Size Baseline</div>
+                <h3>The Data Context</h3>
+                <p>By examining official energy rating figures, we categorized hundreds of TV models into Small (less than 43"), Medium (44" to 65"), and Large (greater than 66") tiers.</p>
+            </div>
+
+            <!-- Card 3: First Data Visualization -->
+            <!-- The 'chart-card' class tells the CSS to format the image inside perfectly -->
+            <div class="story-card chart-card">
+                <div class="card-tag">Phase 3: Visual Proof 1</div>
+                <h3>Size vs. Consumption</h3>
+                <img src="assets/images/Screen Technology & Size Breakdown Bar Chart.png" alt="Size Bar Chart">
+                <p>Power demand scales aggressively: Average consumption jumps from ~128 kWh (Small) to ~380 kWh (Medium) up to ~745 kWh (Large).</p>
+            </div>
+
+            <!-- Card 4: Panel Technology Dimension -->
+            <div class="story-card">
+                <div class="card-tag">Phase 4: Tech Dimension</div>
+                <h3>Panel Technology</h3>
+                <p>Once size is selected, does panel technology matter? We cross-compared LCD, LCD (LED), and OLED display engineering efficiency across the same size tiers.</p>
+            </div>
+
+            <!-- Card 5: Second Data Visualization -->
+            <div class="story-card chart-card">
+                <div class="card-tag">Phase 5: Visual Proof 2</div>
+                <h3>Tech vs. Size</h3>
+                <img src="assets/images/Screen Size vs. Energy Consumption Bar Chart.png" alt="Tech Bar Chart">
+                <p>Technology matters by size: LED draws the most in Large sizes (~760 kWh), while OLED is surprisingly inefficient in Small sizes (~235 kWh).</p>
+            </div>
+
+            <!-- Card 6: Recommendation (highlight-card removed so it matches the rest) -->
+            <div class="story-card">
+                <div class="card-tag">Phase 6: Action</div>
+                <h3>Smart Shopping</h3>
+                <p>Stick to medium screens for energy parity. If buying a large display, check Star Ratings closely. Avoid small OLEDs purely for energy-saving purposes.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Area -->
+    <footer>
+        <p>&copy; 2026 CHONG JAMON</p>
+        <p>Generative AI Acknowledgement: Used Gemini to assist with HTML structure, CSS UI design, and JavaScript.</p>
+    </footer>
+
+    <!-- Links this HTML page to your external JavaScript file for interactivity -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

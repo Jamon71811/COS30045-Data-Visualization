@@ -62,3 +62,23 @@ energy-webpage-v1
 │
 ├── index.html
 └── README.md
+
+
+## Generative AI Reflection
+
+In this section, briefly address:
+
+Which tool(s) you used (if any)
+Gemini
+
+What you used GenAI for (e.g. structure, syntax, debugging)
+To generate the boilerplate HTML structure, write the CSS styling for navigation and layout, and write the vanilla JavaScript for the FAQ accordion.
+
+What you changed or adapted after generation
+I organized the files into the correct folder structure and adjusted the page content and active navigation links for each specific HTML page.
+
+What you learned from using GenAI
+I learned how to link external CSS and JS files to HTML, and how JavaScript can manipulate CSS properties (like `display: none` to `display: block`) to create interactive elements.
+
+Any limitations or issues you encountered
+I realized that AI can generate the code, but I still had to manually ensure the file paths (like `images/PowerIcon.png` and `css/styles.css`) matched my exact folder structure, otherwise the website wouldn't load the styles or images.
