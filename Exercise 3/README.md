@@ -35,4 +35,4 @@ All vertical axes maintain a fixed zero origin baseline, preventing visual infla
 ---
 
 ## AI Declaration
-Generative AI tools (ChatGPT/Gemini) were used to assist with drafting the HTML narrative structure, refining the User Stories, and formatting this README documentation. All AI-generated assistance was reviewed, modified, and integrated responsibly.
+Generative AI tools (Gemini) were used to assist with drafting the HTML narrative structure, refining the User Stories, and formatting this README documentation. All AI-generated assistance was reviewed, modified, and integrated responsibly.
