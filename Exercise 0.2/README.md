@@ -46,21 +46,20 @@ Clone your forked repository to your local machine using **VS Code** or the term
 Your project must follow the structure below.
 
 ```bash
-energy-webpage-v1
+Exercise 0.2
 │
-├── css
-│   └── styles.css
-│
-├── js
-│   └── scripts.js
-│
-├── images
-│   └── PowerIcon.png
-│
-├── data
-│   └── data.csv
+├── assets
+│   ├── css
+│   │   └── styles.css
+│   ├── js
+│   │   └── scripts.js
+│   ├── images
+│   │   └── PowerIcon.png
+│   └── data
 │
 ├── index.html
+├── televisions.html
+├── about.html
 └── README.md
 
 

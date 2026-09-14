@@ -4,31 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Televisions - Energy Consumption</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Link external stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!-- Top navigation bar -->
     <nav>
         <a href="index.html">
-            <img src="images/PowerIcon.png" alt="Power Logo" id="logo">
+            <img src="assets/images/PowerIcon.png" alt="Power Logo" id="logo">
         </a>
         <ul class="nav-links">
-            <!-- The active class is moved to Televisions -->
             <li><a href="index.html">Home</a></li>
             <li><a href="televisions.html" class="active">Televisions</a></li>
             <li><a href="about.html">About Us</a></li>
         </ul>
     </nav>
 
+    <!-- Main page content -->
     <main>
-        <h1>Television Energy Usage</h1>
-        <p>Placeholder content: Information about how much energy different types of TVs consume will go here.</p>
+        <!-- Header introducing the television energy data section -->
+        <div class="header-section">
+            <h1>Television Data Hub</h1>
+            <p>Understand the specifications and energy demands of modern display technologies.</p>
+        </div>
+
+        <!-- Information card displaying technical details and data table -->
+        <div class="content-card">
+            <h2>Panel Technology Comparison</h2>
+            <p>Not all pixels are created equal. Different display technologies require vastly different amounts of electricity to produce the same image brightness. Here is a breakdown of how the three main panel types perform based on our dataset analysis.</p>
+            
+            <!-- Data table presenting energy consumption benchmarks -->
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Panel Technology</th>
+                        <th>Avg. Energy (Small)</th>
+                        <th>Avg. Energy (Large)</th>
+                        <th>Best Consumer Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Standard LCD</strong></td>
+                        <td>~120 kWh/yr</td>
+                        <td>~650 kWh/yr</td>
+                        <td>Budget-friendly, standard viewing environments.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LED (Backlit LCD)</strong></td>
+                        <td>~125 kWh/yr</td>
+                        <td>~760 kWh/yr</td>
+                        <td>Bright rooms and vibrant daytime viewing.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OLED</strong></td>
+                        <td>~235 kWh/yr</td>
+                        <td>~715 kWh/yr</td>
+                        <td>Dark home theaters, perfect contrast and blacks.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
+    <!-- Footer displaying copyright and acknowledgements -->
     <footer>
         <p>&copy; 2026 CHONG JAMON</p>
-        <p>Generative AI Acknowledgement: Used Gemini to assist with basic HTML structure and JavaScript.</p>
+        <p>Generative AI Acknowledgement: Used Gemini to assist with HTML structure and CSS data tables.</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <!-- Link external script for interactivity -->
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

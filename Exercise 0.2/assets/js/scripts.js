@@ -1,13 +1,13 @@
-// Select all elements with the class "accordion"
+// Locate all interactive accordion trigger buttons across the document
 const accordions = document.querySelectorAll(".accordion");
 
-// Loop through each accordion button to add a click event listener
+// Attach an event listener to each accordion button to manage toggle behavior
 accordions.forEach(function(btn) {
     btn.addEventListener("click", function() {
-        // Find the panel element immediately following the clicked button
+        // Target the panel element placed directly below the clicked button
         let panel = this.nextElementSibling;
         
-        // Toggle the display property between block (visible) and none (hidden)
+        // Check current display state and toggle between hidden and visible
         if (panel.style.display === "block") {
             panel.style.display = "none";
         } else {

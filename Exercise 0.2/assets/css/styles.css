@@ -1,0 +1,226 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* Page background colour and base typography */
+body {
+    background-color: #F8F9FA;
+    color: #333;
+}
+
+/* =========================================
+   NAVIGATION BAR
+   ========================================= */
+
+/* Top header container using flexbox alignment */
+nav { 
+    display: flex; 
+    align-items: center; 
+    background-color: #1A2530; 
+    padding: 15px 30px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Brand icon dimensions and transition effect */
+#logo { 
+    height: 45px; 
+    margin-right: 30px; 
+    transition: transform 0.3s ease;
+}
+
+/* Subtle enlargement when hovering over the logo */
+#logo:hover {
+    transform: scale(1.05); 
+}
+
+/* Horizontal list layout for navigation links */
+.nav-links { 
+    list-style: none; 
+    display: flex; 
+    gap: 25px; 
+}
+
+/* Styling for clickable menu items */
+.nav-links a { 
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-weight: 600; 
+    font-size: 15px;
+    padding: 8px 12px; 
+    border-radius: 6px;
+    transition: all 0.3s ease; 
+}
+
+/* Hover state highlighting interactive links */
+.nav-links a:hover { 
+    background-color: #2C3E50; 
+    color: #FFC107; 
+}
+
+/* Highlights the current active navigation item */
+.nav-links a.active { 
+    background-color: #FFC107; 
+    color: #1A2530; 
+}
+
+/* =========================================
+   PAGE CONTENT & CONTAINER
+   ========================================= */
+
+/* Main content wrapper with maximum reading width and centering */
+main { 
+    padding: 40px; 
+    max-width: 1200px; 
+    margin: 0 auto;    
+    min-height: 75vh;  
+}
+
+/* Page header block */
+.header-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header-section h1 {
+    font-size: 2.5rem;
+    color: #1A2530;
+    margin-bottom: 10px;
+}
+
+.header-section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Card container for primary information presentation */
+.content-card {
+    background-color: #FFFFFF;
+    border-top: 5px solid #FFC107;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.content-card h2 {
+    color: #1A2530;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.content-card p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   STRUCTURED DATA TABLE
+   ========================================= */
+
+/* Collapsed table border styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 10px;
+}
+
+/* Cell spacing and borders */
+.data-table th, 
+.data-table td {
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    text-align: left;
+}
+
+/* Table header column styles */
+.data-table th {
+    background-color: #1A2530;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Alternating zebra stripe pattern for rows */
+.data-table tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+/* =========================================
+   FAQ ACCORDION COMPONENT
+   ========================================= */
+
+/* Background wrapper for the FAQ section */
+#faq-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#faq-section h2 {
+    color: #1A2530;
+    margin-bottom: 15px;
+}
+
+/* Interactive trigger button */
+.accordion { 
+    background-color: #F8F9FA; 
+    color: #1A2530; 
+    cursor: pointer; 
+    padding: 18px; 
+    width: 100%; 
+    text-align: left; 
+    border: 1px solid #E0E0E0; 
+    border-radius: 6px;
+    outline: none; 
+    font-size: 16px; 
+    font-weight: 600;
+    margin-top: 15px; 
+    transition: 0.3s ease;
+}
+
+/* Hover highlight on the question trigger */
+.accordion:hover { 
+    background-color: #FFC107; 
+    color: #1A2530;
+    border-color: #FFC107;
+}
+
+/* Collapsible panel containing the answer text */
+.panel { 
+    padding: 20px; 
+    background-color: #FFFFFF; 
+    display: none; 
+    border: 1px solid #E0E0E0;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.panel p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* =========================================
+   FOOTER SECTION
+   ========================================= */
+
+/* Bottom container styling */
+footer { 
+    background-color: #1A2530; 
+    color: #FFFFFF; 
+    text-align: center; 
+    padding: 25px; 
+    margin-top: 40px; 
+    border-top: 4px solid #FFC107; 
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #CBD5E1;
+}
