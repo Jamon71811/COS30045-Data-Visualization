@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configures character encoding and standardises viewport rendering across devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4.1 - SVG House</title>
+    <!-- Links the HTML document to the external stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Top-level navigation container displaying branding and navigation routes -->
+    <nav>
+        <a href="index.html">
+            <img src="assets/images/PowerIcon.png" alt="Power Logo" id="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="televisions.html">Televisions</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <!-- Identifies the current active page in the navigation menu -->
+            <li><a href="svg-house.html" class="active">Exercise 4.1 (SVG)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main document body wrapping the vector graphics canvas -->
+    <main>
+        <div class="header-section">
+            <h1>Customised SVG House and Garden</h1>
+            <p>A composite vector illustration demonstrating modified coordinates, dynamic strokes, and new geometric elements.</p>
+        </div>
+
+        <div class="content-card" style="text-align: center;">
+            <!-- SVG root element establishing fixed canvas dimensions and internal coordinate boundaries -->
+            <svg width="800" height="600" viewBox="0 0 800 600" style="border: 3px solid #1A2530; border-radius: 8px; background-color: #87CEEB;">
+                
+                <!-- 1. BACKGROUND ENVIRONMENT -->
+                <!-- The rect tag establishes the lower ground/grass section spanning the canvas width -->
+                <rect x="0" y="400" width="800" height="200" fill="#2E8B57" />
+
+                <!-- 2. SUN AND RAYS (Customised with thick stroke) -->
+                <!-- The circle tag forms the main celestial body, framed by a thick orange stroke attribute -->
+                <circle cx="680" cy="80" r="45" fill="#FFD700" stroke="#FF8C00" stroke-width="5" />
+                <!-- The line tags define straight segments projecting outwards to form light rays -->
+                <line x1="680" y1="20" x2="680" y2="5" stroke="#FFD700" stroke-width="4" stroke-linecap="round" />
+                <line x1="722" y1="38" x2="735" y2="25" stroke="#FFD700" stroke-width="4" stroke-linecap="round" />
+                <line x1="740" y1="80" x2="755" y2="80" stroke="#FFD700" stroke-width="4" stroke-linecap="round" />
+                <line x1="722" y1="122" x2="735" y2="135" stroke="#FFD700" stroke-width="4" stroke-linecap="round" />
+                <line x1="680" y1="140" x2="680" y2="155" stroke="#FFD700" stroke-width="4" stroke-linecap="round" />
+                <line x1="638" y1="122" x2="625" y2="135" stroke="#FFD700" stroke-width="4" stroke-linecap="round" />
+                <line x1="620" y1="80" x2="605" y2="80" stroke="#FFD700" stroke-width="4" stroke-linecap="round" />
+                <line x1="638" y1="38" x2="625" y2="25" stroke="#FFD700" stroke-width="4" stroke-linecap="round" />
+                <!-- Renders the descriptive label near the geometric shape -->
+                <text x="680" y="180" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#1A2530" text-anchor="middle">Sun</text>
+
+                <!-- 3. CLOUDS (Customised position) -->
+                <!-- The ellipse tags create varying oval shapes, with the middle cloud translated to new cx/cy coordinates -->
+                <ellipse cx="180" cy="100" rx="70" ry="25" fill="#FFFFFF" opacity="0.9" />
+                <ellipse cx="420" cy="50" rx="60" ry="20" fill="#FFFFFF" opacity="0.8" />
+                <ellipse cx="580" cy="140" rx="80" ry="25" fill="#FFFFFF" opacity="0.95" />
+                <!-- Renders the descriptive labels for the cloud elements -->
+                <text x="180" y="145" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#1A2530" text-anchor="middle">Cloud</text>
+                <text x="420" y="90" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#1A2530" text-anchor="middle">Cloud</text>
+                <text x="580" y="185" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#1A2530" text-anchor="middle">Cloud</text>
+
+                <!-- 4. BIRDS -->
+                <!-- The path tag uses quadratic Bezier curves (Q) without fill to draw avian silhouettes -->
+                <path d="M 120 180 Q 140 150 160 180 Q 180 150 200 180" fill="none" stroke="#1A2530" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M 450 100 Q 470 70 490 100 Q 510 70 530 100" fill="none" stroke="#1A2530" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M 500 180 Q 520 150 540 180 Q 560 150 580 180" fill="none" stroke="#1A2530" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <!-- Renders the descriptive label for the birds -->
+                <text x="490" y="135" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#1A2530" text-anchor="middle">Bird</text>
+
+                <!-- 5. NEW ITEM: WOODEN FENCE -->
+                <!-- The grouped rect tags construct a wooden boundary fence along the left horizon -->
+                <g fill="#D2691E" stroke="#8B4513" stroke-width="2">
+                    <rect x="20" y="360" width="10" height="50" />
+                    <rect x="50" y="360" width="10" height="50" />
+                    <rect x="80" y="360" width="10" height="50" />
+                    <rect x="220" y="360" width="10" height="50" />
+                    <rect x="250" y="360" width="10" height="50" />
+                    <!-- Horizontal fence rails crossing the vertical posts -->
+                    <rect x="10" y="375" width="260" height="8" />
+                    <rect x="10" y="390" width="260" height="8" />
+                </g>
+
+                <!-- 6. TREE (Left Side) -->
+                <!-- The rect tag establishes the vertical timber trunk base -->
+                <rect x="120" y="220" width="40" height="200" fill="#8B4513" stroke="#5C2E0B" stroke-width="2" />
+                <!-- The overlapping ellipses form the dense organic foliage -->
+                <ellipse cx="140" cy="220" rx="75" ry="85" fill="#32CD32" stroke="#228B22" stroke-width="2" />
+                <ellipse cx="140" cy="150" rx="60" ry="70" fill="#228B22" stroke="#006400" stroke-width="2" />
+                <!-- Renders the descriptive label on the tree foliage -->
+                <text x="140" y="280" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Tree</text>
+
+                <!-- 7. GRASS AND FLOWER (Right Side) -->
+                <!-- The path tag creates irregular bush foliage using consecutive Bezier curves -->
+                <path d="M 600 450 Q 620 380 660 410 Q 700 360 740 410 Q 770 380 780 450 Z" fill="#32CD32" stroke="#228B22" stroke-width="2" />
+                <!-- The line tag represents the botanical stem -->
+                <line x1="690" y1="410" x2="690" y2="330" stroke="#006400" stroke-width="4" stroke-linecap="round" />
+                <!-- The grouped circles construct the central stamen and surrounding floral petals -->
+                <circle cx="690" cy="330" r="12" fill="#FFD700" />
+                <circle cx="670" cy="330" r="12" fill="#FF6347" />
+                <circle cx="710" cy="330" r="12" fill="#FF6347" />
+                <circle cx="690" cy="310" r="12" fill="#FF6347" />
+                <circle cx="690" cy="350" r="12" fill="#FF6347" />
+                <!-- Renders the descriptive label positioned on the grass bush -->
+                <text x="690" y="440" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Grass</text>
+
+                <!-- 8. HOUSE ARCHITECTURE (Customised colours) -->
+                <!-- The rect tag renders the masonry chimney structured behind the main roof -->
+                <rect x="330" y="130" width="35" height="100" fill="#7F8C8D" stroke="#2C3E50" stroke-width="3" />
+                <!-- The rect tag establishes the primary square foundation walls with a mint-green architectural finish -->
+                <rect x="300" y="250" width="200" height="150" fill="#A2D9CE" stroke="#117A65" stroke-width="3" />
+                <!-- The polygon tag explicitly connects three Cartesian vertices to form a dark slate pitched roof -->
+                <polygon points="280,250 400,120 520,250" fill="#34495E" stroke="#2C3E50" stroke-width="3" />
+                
+                <!-- The rect and circle tags construct the entrance doorway and hardware -->
+                <rect x="375" y="320" width="50" height="80" fill="#2C3E50" />
+                <circle cx="415" cy="365" r="4" fill="#F1C40F" />
+
+                <!-- The g tag encapsulates identical window geometries to apply uniform styling rules -->
+                <g fill="#E0F7FA" stroke="#117A65" stroke-width="3">
+                    <!-- The transform attribute offsets the local origin to position the left window -->
+                    <g transform="translate(320, 280)">
+                        <rect x="0" y="0" width="40" height="40" />
+                        <line x1="20" y1="0" x2="20" y2="40" />
+                        <line x1="0" y1="20" x2="40" y2="20" />
+                    </g>
+                    <!-- The transform attribute offsets the local origin to position the right window -->
+                    <g transform="translate(440, 280)">
+                        <rect x="0" y="0" width="40" height="40" />
+                        <line x1="20" y1="0" x2="20" y2="40" />
+                        <line x1="0" y1="20" x2="40" y2="20" />
+                    </g>
+                </g>
+                <!-- Renders the descriptive label for the entire architectural structure -->
+                <text x="400" y="230" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">House</text>
+
+                <!-- 9. WINDING PATHWAY (Customised with dashed stroke line) -->
+                <!-- The path tag defines quadratic Bezier curves mapping a curved walk from the door to the canvas edge -->
+                <path d="M 400 400 Q 300 500 450 600 L 550 600 Q 400 500 450 400 Z" fill="#D2B48C" stroke="#8B5A2B" stroke-width="2" />
+                <!-- This secondary path draws a decorative dashed line down the center of the garden pathway -->
+                <path d="M 425 400 Q 350 500 500 600" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="10, 8" />
+                
+                <!-- 10. NEW ITEM: MAILBOX -->
+                <!-- The rect tag creates the vertical wooden mounting post -->
+                <rect x="530" y="350" width="8" height="60" fill="#8B4513" />
+                <!-- The path and rect tags combine to form the curved metal receptacle -->
+                <path d="M 515 350 Q 530 330 545 350 Z" fill="#E74C3C" />
+                <rect x="515" y="350" width="30" height="20" fill="#E74C3C" />
+                <rect x="520" y="355" width="10" height="10" fill="#FFFFFF" />
+
+                <!-- 11. CANVAS TITLE -->
+                <!-- The text tag anchors standard typographic characters at the designated baseline origin -->
+                <text x="400" y="550" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">My Customised Vector Garden</text>
+            </svg>
+        </div>
+
+        <!-- Container presenting the annotated image required for Step 2 -->
+        <div class="content-card" style="text-align: center;">
+            <h2>SVG Coordinate System Analysis</h2>
+            <p>The annotated screenshot below demonstrates how the geometric primitives map to the SVG Cartesian coordinate system, where (0,0) represents the top-left origin.</p>
+            
+            <!-- Implements the saved annotated image from the local assets directory -->
+            <img src="assets/images/annotated-svg.png" alt="Annotated SVG Coordinates" style="max-width: 100%; height: auto; border: 2px solid #1A2530; border-radius: 8px; margin-top: 20px;">
+        </div>
+    </main>
+
+    <!-- Site footer with personal identity and generative AI disclosure -->
+    <footer>
+        <p>&copy; 2026 CHONG JAMON</p>
+        <p>Generative AI Acknowledgement: Used Gemini to assist with SVG graphic construction, coordinate mappings, and structural layout.</p>
+    </footer>
+
+    <!-- Script file maintaining accordion and interaction behavior -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
