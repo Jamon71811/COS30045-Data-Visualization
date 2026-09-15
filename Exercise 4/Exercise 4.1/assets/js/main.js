@@ -1,22 +1,32 @@
 // ==========================================
-// D3.js Bar Chart Generation Script
+// D3.js Scaled Bar Chart Generation Script
 // ==========================================
 
 // Selects the responsive container and appends the SVG canvas
-// Establishes the coordinate system boundary
+// Establishes a compact coordinate system boundary (500x500) for scaling demonstration
 const svg = d3.select(".responsive-svg-container")
     .append("svg")
-    .attr("viewBox", "0 0 1200 1600")
+    .attr("viewBox", "0 0 500 500")
     .style("border", "1px solid black");
 
-// Defines the logic to construct the bar chart geometry
+// Defines the logic to construct the scaled bar chart geometry
 const drawBarChart = data => {
-    // Defines constant numerical values for vertical geometry
-    const barHeight = 20;
-    const barSpacing = 5;
+    
+    // Establishes a linear scale for the horizontal x-axis
+    // Maps the numerical data domain (0 to 1100) to the physical pixel range of the canvas (0 to 500)
+    const xScale = d3.scaleLinear()
+        .domain([0, 1100])
+        .range([0, 500]);
+
+    // Establishes a band scale for the vertical y-axis categorical data
+    // Distributes the brand categories evenly across the canvas height (0 to 500) with a 10% spacing padding
+    const yScale = d3.scaleBand()
+        .domain(data.map(d => d.brand))
+        .range([0, 500])
+        .padding(0.1);
 
     // Binds the dataset to SVG rectangular primitives
-    // Applies exact coordinates, dimensions, and structural classes based on individual data points
+    // Applies dynamic coordinates and dimensions computed automatically by the defined scales
     svg.selectAll("rect")
         .data(data)
         .join("rect")
@@ -24,11 +34,11 @@ const drawBarChart = data => {
             console.log(d);
             return `bar bar-${d.count}`;
         })
-        .attr("width", d => d.count)
-        .attr("height", barHeight)
+        .attr("width", d => xScale(d.count))
+        .attr("height", yScale.bandwidth())
         .attr("fill", "blue")
         .attr("x", 0)
-        .attr("y", (d, i) => i * (barHeight + barSpacing));
+        .attr("y", d => yScale(d.brand));
 };
 
 // Fetches the CSV dataset from the local directory
