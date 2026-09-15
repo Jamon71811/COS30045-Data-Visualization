@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configures character encoding and standardises viewport rendering across devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Energy Consumption</title>
+    <!-- Links external stylesheets providing page layout and presentation rules -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <nav>
+        <a href="index.html">
+            <img src="assets/images/PowerIcon.png" alt="Power Logo" id="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="televisions.html">Televisions</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="svg-house.html">Exercise 4.1 (SVG)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main page content -->
+    <main>
+        <!-- Welcome title and introductory description -->
+        <div class="header-section">
+            <h1>Appliance Energy Consumption</h1>
+            <p>Empowering Australian households with data-driven energy insights.</p>
+        </div>
+
+        <!-- Container for responsive D3 visualisations -->
+        <div class="content-card">
+            <h2>D3 Interactive Bar Chart</h2>
+            <p>This space is reserved for dynamic, data-driven SVG visualisations.</p>
+            
+            <!-- Target division applying the responsive constraints for D3 SVG injection -->
+            <div class="responsive-svg-container"></div>
+        </div>
+        
+        <!-- Accordion component for common questions -->
+        <section id="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <button class="accordion">Why should I care about appliance energy?</button>
+            <div class="panel">
+                <p>Appliances account for a massive portion of household electricity bills and carbon footprints in Australia. Understanding their impact helps optimize your long-term budget.</p>
+            </div>
+            
+            <button class="accordion">How is energy measured?</button>
+            <div class="panel">
+                <p>Energy is typically measured in Kilowatt-hours (kWh). Our data specifically focuses on the labelled annual energy consumption to standardise comparisons.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer displaying copyright and acknowledgements -->
+    <footer>
+        <p>&copy; 2026 CHONG JAMON</p>
+        <p>Generative AI Acknowledgement: Used Gemini to assist with basic HTML structure, JavaScript logic, and D3 DOM manipulation.</p>
+    </footer>
+
+    <!-- Link external script for accordion interactivity -->
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- Loads the D3 JavaScript library from an external content delivery network -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Loads the custom D3 script executing the DOM manipulation rules -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
