@@ -224,3 +224,11 @@ footer p {
     font-size: 0.9rem;
     color: #CBD5E1;
 }
+
+/* Defines a responsive container for SVG elements maintaining maximum width boundaries and center alignment */
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
+}
