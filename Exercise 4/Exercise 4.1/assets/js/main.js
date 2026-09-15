@@ -4,7 +4,7 @@
 
 // Selects the primary heading element and applies a specific text colour styling
 d3.select("h1")
-  .style("color", "green");
+  .style("color", "orange");
 
 // Selects the container class division and appends a new paragraph element containing specific text
 d3.select(".container")
@@ -18,4 +18,4 @@ d3.select("#d3-canvas")
   .attr("y", 50)
   .attr("width", 100)
   .attr("height", 30)
-  .style("fill", "green");
+  .style("fill", "orange");
