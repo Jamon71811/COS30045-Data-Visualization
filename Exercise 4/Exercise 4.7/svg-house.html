@@ -26,8 +26,8 @@
     <!-- Main document body wrapping the vector graphics canvas -->
     <main>
         <div class="header-section">
-            <h1>SVG House and Garden</h1>
-            <p>A composite vector illustration demonstrating SVG coordinates, dynamic strokes, and geometric elements.</p>
+            <h1>Customised SVG House and Garden</h1>
+            <p>A composite vector illustration demonstrating advanced coordinates, dynamic strokes, and new geometric elements.</p>
         </div>
 
         <div class="content-card" style="text-align: center;">
@@ -35,7 +35,7 @@
             <svg width="800" height="600" viewBox="0 0 800 600" style="border: 3px solid #1A2530; border-radius: 8px; background-color: #87CEEB;">
                 
                 <!-- 1. BACKGROUND ENVIRONMENT -->
-                <!-- The rect tag establishes the lower ground/grass section spanning the canvas width -->
+                <!-- The rect tag establishes the lower ground section spanning the canvas width -->
                 <rect x="0" y="400" width="800" height="200" fill="#2E8B57" />
 
                 <!-- 2. SUN AND RAYS -->
@@ -55,7 +55,7 @@
 
                 <!-- 3. CLOUDS -->
                 <!-- The ellipse tags create varying oval shapes placed at specific cx/cy coordinates -->
-                <ellipse cx="280" cy="100" rx="70" ry="25" fill="#FFFFFF" opacity="0.9" />                
+                <ellipse cx="280" cy="100" rx="70" ry="25" fill="#FFFFFF" opacity="0.9" />
                 <ellipse cx="420" cy="50" rx="60" ry="20" fill="#FFFFFF" opacity="0.8" />
                 <ellipse cx="580" cy="140" rx="80" ry="25" fill="#FFFFFF" opacity="0.95" />
                 <!-- Renders the descriptive labels for the cloud elements -->
@@ -82,7 +82,7 @@
                     <rect x="10" y="390" width="260" height="8" />
                 </g>
 
-                <!-- 6. TREE (Left Side) -->
+                <!-- 6. TREE -->
                 <!-- The rect tag establishes the vertical timber trunk base -->
                 <rect x="120" y="220" width="40" height="200" fill="#8B4513" stroke="#5C2E0B" stroke-width="2" />
                 <!-- The overlapping ellipses form the dense organic foliage -->
@@ -91,7 +91,7 @@
                 <!-- Renders the descriptive label on the tree foliage -->
                 <text x="140" y="280" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Tree</text>
 
-                <!-- 7. GRASS AND FLOWER (Right Side) -->
+                <!-- 7. GRASS AND FLOWER -->
                 <!-- The path tag creates irregular bush foliage using consecutive Bezier curves -->
                 <path d="M 600 450 Q 620 380 660 410 Q 700 360 740 410 Q 770 380 780 450 Z" fill="#32CD32" stroke="#228B22" stroke-width="2" />
                 <!-- The line tag represents the botanical stem -->
@@ -108,9 +108,9 @@
                 <!-- 8. HOUSE ARCHITECTURE -->
                 <!-- The rect tag renders the masonry chimney structured behind the main roof -->
                 <rect x="330" y="130" width="35" height="100" fill="#7F8C8D" stroke="#2C3E50" stroke-width="3" />
-                <!-- The rect tag establishes the primary square foundation walls with a mint-green architectural finish -->
+                <!-- The rect tag establishes the primary square foundation walls -->
                 <rect x="300" y="250" width="200" height="150" fill="#A2D9CE" stroke="#117A65" stroke-width="3" />
-                <!-- The polygon tag explicitly connects three Cartesian vertices to form a dark slate pitched roof -->
+                <!-- The polygon tag explicitly connects three Cartesian vertices to form a slate pitched roof -->
                 <polygon points="280,250 400,120 520,250" fill="#34495E" stroke="#2C3E50" stroke-width="3" />
                 
                 <!-- The rect and circle tags construct the entrance doorway and hardware -->
@@ -151,28 +151,151 @@
 
                 <!-- 11. CANVAS TITLE -->
                 <!-- The text tag anchors standard typographic characters at the designated baseline origin -->
-                <text x="400" y="550" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">My Vector Garden</text>
+                <text x="400" y="550" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">My Customised Vector Garden</text>
             </svg>
         </div>
 
-        <!-- ANNOTATED SCREENSHOT SECTION -->
-        <!-- Container presenting the annotated image demonstrating coordinate mapping -->
-        <div class="content-card" style="text-align: center;">
-            <h2>SVG Coordinate System Analysis</h2>
-            <p>The annotated screenshot below demonstrates how the geometric primitives map to the SVG Cartesian coordinate system, where (0,0) represents the top-left origin.</p>
+        <!-- Section displaying visual progression comparisons -->
+        <div class="content-card">
+            <h2>Design Progression (Before & After)</h2>
+            <p>Visual comparison outlining the structural and aesthetic evolution of the vector illustration.</p>
             
-            <!-- Implements the saved annotated image from the local assets directory -->
-            <img src="assets/images/annotated-svg.png" alt="Annotated SVG Coordinates" style="max-width: 100%; height: auto; border: 2px solid #1A2530; border-radius: 8px; margin-top: 20px;">
+            <!-- Side-by-side layout for standard SVG rendering comparison -->
+            <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 40px; margin-top: 20px;">
+                <div style="flex: 1; text-align: center;">
+                    <h3>Before</h3>
+                    <img src="assets/images/original-svg.png" alt="Original Clean SVG" style="max-width: 100%; border: 2px solid #1A2530; border-radius: 8px;">
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <h3>After</h3>
+                    <img src="assets/images/customised-svg.png" alt="Customised Clean SVG" style="max-width: 100%; border: 2px solid #1A2530; border-radius: 8px;">
+                </div>
+            </div>
+
+            <!-- Side-by-side layout for annotated coordinate analysis comparison -->
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <div style="flex: 1; text-align: center;">
+                    <h3>Before (Annotated)</h3>
+                    <img src="assets/images/annotated-original.png" alt="Annotated Original SVG" style="max-width: 100%; border: 2px solid #1A2530; border-radius: 8px;">
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <h3>After (Annotated)</h3>
+                    <img src="assets/images/annotated-customised.png" alt="Annotated Customised SVG" style="max-width: 100%; border: 2px solid #1A2530; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Section detailing exact attribute parameters via structured data table -->
+        <div class="content-card">
+            <h2>Element Coordinate & Styling Analysis</h2>
+            <p>A tabular breakdown detailing the exact geometrical parameters and styling properties corresponding to the progression phases.</p>
+            
+            <!-- Data table detailing the geometrical parameters and styling properties -->
+            <table class="data-table" style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                <thead>
+                    <!-- Table header defining the column titles -->
+                    <tr style="background-color: #1A2530; color: #FFFFFF;">
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Elements</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Before (Initial Layout)</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">After (Customised Layout)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row defining the Background Environment properties -->
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Background & Grass</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Sky color inherits from the SVG background attribute. A flat <code>&lt;rect&gt;</code> primitive at <code>y="400"</code> represents the grass area.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Maintains the exact same layout and properties.</td>
+                    </tr>
+                    
+                    <!-- Row defining the Sun Element properties -->
+                    <tr style="background-color: #F8F9FA;">
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Sun & Rays</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">A basic <code>&lt;circle&gt;</code> primitive positioned at <code>cx="680" cy="80"</code> with a solid yellow fill.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Thick outer boundary established via <code>stroke="#FF8C00" stroke-width="5"</code>. Radiant illumination established using eight projecting <code>&lt;line&gt;</code> primitives.</td>
+                    </tr>
+
+                    <!-- Row defining the Clouds Element properties -->
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Clouds</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Three <code>&lt;ellipse&gt;</code> shapes with slightly transparent white fill, positioned near the center.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">The coordinates for the left and middle clouds shift outward to accommodate the central house structure.</td>
+                    </tr>
+
+                    <!-- Row defining the Birds Element properties -->
+                    <tr style="background-color: #F8F9FA;">
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Birds</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Three <code>&lt;path&gt;</code> shapes using quadratic Bézier curves (Q) to draw simple avian silhouettes.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Maintains the exact same layout and properties.</td>
+                    </tr>
+
+                    <!-- Row defining the Tree Element properties -->
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Tree</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">A brown <code>&lt;rect&gt;</code> forms the trunk. Two overlapping green <code>&lt;ellipse&gt;</code> shapes create the foliage.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Maintains the exact same layout and properties.</td>
+                    </tr>
+
+                    <!-- Row defining the Wooden Fence Element properties -->
+                    <tr style="background-color: #F8F9FA;">
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Wooden Fence</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Not present in the initial design.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Multiple vertical and horizontal <code>&lt;rect&gt;</code> shapes grouped inside a <code>&lt;g&gt;</code> tag to form a boundary beside the tree.</td>
+                    </tr>
+
+                    <!-- Row defining the Main House Structure properties -->
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>House Architecture</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Base walls feature a brown fill. The pitched roof uses a <code>&lt;polygon&gt;</code> with a dark red fill.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Base walls feature a mint-green fill. The roof features a slate fill. A new masonry chimney <code>&lt;rect&gt;</code> sits behind the roof.</td>
+                    </tr>
+
+                    <!-- Row defining the House Windows and Doors properties -->
+                    <tr style="background-color: #F8F9FA;">
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Doors & Windows</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">A basic <code>&lt;rect&gt;</code> door with a <code>&lt;circle&gt;</code> knob. Windows share a common <code>&lt;g&gt;</code> group styling.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Maintains the exact same layout and properties.</td>
+                    </tr>
+
+                    <!-- Row defining the Grass Bush and Flower properties -->
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Bush & Flower</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">A green <code>&lt;path&gt;</code> creates the bush. A <code>&lt;line&gt;</code> acts as the stem, supporting five <code>&lt;circle&gt;</code> petals.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Maintains the exact same layout and properties.</td>
+                    </tr>
+
+                    <!-- Row defining the Pathway Element properties -->
+                    <tr style="background-color: #F8F9FA;">
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Winding Pathway</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">A solid curved <code>&lt;path&gt;</code> element leads from the door to the bottom canvas edge.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">A secondary path adds a dashed white center line utilizing the <code>stroke-dasharray</code> attribute.</td>
+                    </tr>
+
+                    <!-- Row defining the Mailbox Element properties -->
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Mailbox</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Not present in the initial design.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Built from a wooden <code>&lt;rect&gt;</code> post and a curved red <code>&lt;path&gt;</code> box, standing near the house.</td>
+                    </tr>
+
+                    <!-- Row defining the Typography and Text Labels properties -->
+                    <tr style="background-color: #F8F9FA;">
+                        <td style="padding: 12px; border: 1px solid #ddd;"><strong>Text Labels</strong></td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">Individual <code>&lt;text&gt;</code> tags identify the structural elements. A large title anchors the bottom.</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">The central bottom title adjusts its text content to reflect the customised layout.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
 
-    <!-- Site footer with personal identity and generative AI disclosure -->
+    <!-- Site footer maintaining copyright and acknowledgements -->
     <footer>
         <p>&copy; 2026 CHONG JAMON</p>
         <p>Generative AI Acknowledgement: Used Gemini to assist with SVG graphic construction, coordinate mappings, and structural layout.</p>
     </footer>
 
-    <!-- Script file maintaining accordion and interaction behavior -->
+    <!-- Script file maintaining interactive behavior -->
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>
