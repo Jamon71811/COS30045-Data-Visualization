@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Multi-Chart Dashboard</title>
+    <!-- Connects the external CSS file to style the webpage -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Provides the top menu for navigating between different web pages -->
+    <nav>
+        <a href="index.html">
+            <img src="assets/images/PowerIcon.png" alt="Power Logo" id="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exercise5-1.html" class="active">Exercise 5 Dashboards</a></li>
+            <li><a href="televisions.html">Televisions</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Wraps the primary content area of the webpage -->
+    <main>
+        <!-- Defines the top title section to introduce the page topic -->
+        <div class="header-section">
+            <h1>TV & Energy Dashboards</h1>
+            <p>A comprehensive visual analysis of Australian television data.</p>
+        </div>
+        
+        <!-- Creates a visual card container to present the vertical bar chart -->
+        <div class="content-card">
+            <h2>Exercise 5.1: Vertical Bar Chart</h2>
+            <p>Comparing the average energy consumption of 55-inch TV screen technologies.</p>
+            
+            <!-- Provides a responsive container where the D3 library draws the bar chart -->
+            <div class="responsive-svg-container">
+                <div id="bar-chart"></div>
+            </div>
+        </div>
+
+        <!-- Creates a visual card container to present the scatter plot and line chart -->
+        <div class="content-card">
+            <h2>Exercise 5.2: Scatter Plot & Line Chart</h2>
+            <p>Tracking the average spot price of electricity in Australia (1998 - 2024).</p>
+            
+            <!-- Provides a responsive container where the D3 library draws the line chart -->
+            <div class="responsive-svg-container">
+                <div id="line-chart"></div>
+            </div>
+        </div>
+
+        <!-- Creates a visual card container to present the interactive donut chart -->
+        <div class="content-card">
+            <h2>Exercise 5.3: Interactive Donut Chart</h2>
+            <p>Visualising the market proportion of Small, Medium, and Large TV models.</p>
+            
+            <!-- Provides a responsive container where the D3 library draws the donut chart -->
+            <div class="responsive-svg-container" style="text-align: center;">
+                <div id="donut-chart"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Defines the bottom section containing copyright and AI declarations -->
+    <footer>
+        <p>&copy; 2026 CHONG JAMON</p>
+        <p>Generative AI Acknowledgement: Used GEMINI to assist with HTML structure and advanced D3.js visualisations.</p>
+    </footer>
+
+    <!-- Connects the external JavaScript files to enable interactive features and data visualisations -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <script src="assets/js/bar-chart.js"></script>
+    <script src="assets/js/line-chart.js"></script>
+    <script src="assets/js/donut-chart.js"></script>
+</body>
+</html>
