@@ -1,0 +1,222 @@
+/* Resets browser defaults and sets font */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* Sets page background and enables flexbox layout for full height */
+body {
+    background-color: #F8F9FA;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================================
+   NAVIGATION BAR
+   ========================================= */
+
+/* Top navigation layout with shadow */
+nav { 
+    display: flex; 
+    align-items: center; 
+    background-color: #1A2530; 
+    padding: 15px 30px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Logo styling with hover scale */
+#logo { 
+    height: 45px; 
+    margin-right: 30px; 
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.05); 
+}
+
+/* Nav links container */
+.nav-links { 
+    list-style: none; 
+    display: flex; 
+    gap: 25px; 
+}
+
+/* Interactive link styles */
+.nav-links a { 
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-weight: 600; 
+    font-size: 15px;
+    padding: 8px 16px; 
+    border-radius: 6px;
+    transition: all 0.3s ease; 
+}
+
+/* Applies highlight colour on hover */
+.nav-links a:hover { 
+    background-color: #2C3E50; 
+    color: #FFC107; 
+}
+
+/* Active page indicator */
+.nav-links a.active { 
+    background-color: #FFC107; 
+    color: #1A2530; 
+}
+
+/* =========================================
+   MAIN CONTENT & CARDS
+   ========================================= */
+
+/* Main wrapper expanding to push footer down */
+main { 
+    padding: 40px; 
+    max-width: 1100px; 
+    margin: 0 auto;    
+    flex: 1; 
+    width: 100%;
+}
+
+/* Page headers */
+.header-section {
+    margin-bottom: 30px;
+}
+
+.header-section h1 {
+    font-size: 2.2rem;
+    color: #1A2530;
+    margin-bottom: 8px;
+}
+
+.header-section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Modern content card for data */
+.content-card {
+    background-color: #FFFFFF;
+    border-top: 5px solid #FFC107;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    margin-bottom: 30px;
+    position: relative; 
+}
+
+/* Data Table styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 15px;
+}
+
+.data-table th, .data-table td {
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #1A2530;
+    color: #FFFFFF;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+/* =========================================
+   FAQ ACCORDION 
+   ========================================= */
+
+/* Accordion button styles */
+.accordion { 
+    background-color: #F8F9FA; 
+    color: #1A2530; 
+    cursor: pointer; 
+    padding: 18px; 
+    width: 100%; 
+    text-align: left; 
+    border: 1px solid #E0E0E0; 
+    border-radius: 6px;
+    font-size: 16px; 
+    font-weight: 600;
+    margin-top: 15px; 
+    transition: 0.3s ease;
+}
+
+.accordion:hover { 
+    background-color: #FFC107; 
+    color: #1A2530;
+    border-color: #FFC107;
+}
+
+/* Accordion text panel */
+.panel { 
+    padding: 20px; 
+    background-color: #FFFFFF; 
+    display: none; 
+    border: 1px solid #E0E0E0;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* Footer layout */
+footer { 
+    background-color: #1A2530; 
+    color: #CBD5E1; 
+    text-align: center; 
+    padding: 25px; 
+    border-top: 4px solid #FFC107; 
+}
+
+/* =========================================
+   FILTER BUTTONS 
+   ========================================= */
+
+/* Container for the filter buttons */
+#filters_screen, #filters_size, #filters_screen_scatter {
+    margin: 15px 0px 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Base styling for interactive filter buttons */
+.filter {
+    min-width: 90px;
+    padding: 10px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF; 
+    background-color: #1A2530; 
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Hover state styling */
+.filter:hover {
+    background-color: #2C3E50; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Active selected state styling */
+.filter.active {
+    background-color: #E67E22; 
+    color: #FFFFFF;
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+}
